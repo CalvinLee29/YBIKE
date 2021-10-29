@@ -1,0 +1,42 @@
+@media only screen and (max-width: 500px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+.content{
+    border: 1px black solid;
+    padding: 10px;
+    margin: auto;
+}
+
+img{
+    padding: 10px;
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: center;
+    padding: 5px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+button{
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: lightblue;
+    color: black;
+}

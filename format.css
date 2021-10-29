@@ -1,0 +1,159 @@
+*{
+    padding : 0;
+    margin :0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    display: flex;
+    /* box-sizing: border-box; */
+    align-items: center;
+    justify-content: center;
+    background-color: #0096ff;
+    color: white;
+    
+}
+
+.title{
+    width: 50%;
+    font-size: 3rem;
+    padding-right: 2em;
+}
+
+.logo{
+    width: 30%;
+    padding-right: 10em;
+}
+
+.logo img{
+    width: 360px;
+    height: 180px;
+}
+
+.navbar{
+    display: flex;
+    padding :1em;
+    background-color: black;
+    min-height: 2em;
+}
+
+.navbar a, .dropdown{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 16.5%;
+}
+
+.navbar a:hover, .navbar .dropdown:hover{
+    background-color: gray;
+    color: white;
+}
+
+.page a{
+    color: black;
+}
+
+.page{
+    display: none;
+}
+
+.dropdown:hover .page{
+    margin-top: 3em;
+    padding: 0 1em;
+    
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+}
+
+.dropdown:hover .page a{
+    color: black;
+    width: 100%;
+}
+
+.navbar img{
+    padding-left: .4em;
+    width:24px;
+    height:24px;
+}
+
+.menu{
+    display: none;
+}
+
+.content{
+    margin: 3em;
+    font-size: 1rem;
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white; 
+    
+}
+
+.copyRight{
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.logoFooter{
+    display: flex;
+    padding-right: 1em;
+}
+
+
+.logo1{
+    padding-right: .5em;    
+}
+
+.logo1 img{
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    
+    .navbar a, .navbar .dropdown{
+        width: 100%;
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .navbar:hover a, .navbar:hover .dropdown{
+        display: flex;
+    }
+
+    .logo{
+        display: none;
+    }
+
+
+    .title{
+        display: flex;
+        justify-content: center;
+        padding-right: 0em;
+        width: 100%;
+    }
+}
+

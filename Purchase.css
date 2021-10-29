@@ -1,0 +1,47 @@
+@media only screen and (max-width: 500px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+.content h1{
+    border: 1px black solid;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.content h3{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.rButton{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.info{
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+label{
+    padding: 10px;
+}
+
+.box{
+    padding-bottom: 1px;
+}
+
+.confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
